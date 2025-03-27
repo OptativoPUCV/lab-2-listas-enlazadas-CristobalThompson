@@ -81,3 +81,37 @@ Thu, Mar 27, 2025 10:35:43 AM:
  tests:  9|3
 total_score: 35/70
 35135e2
+Thu, Mar 27, 2025 10:43:35 AM: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+list.c: In function 'pushFront':
+list.c:65:5: error: unknown type name 'node'; did you mean 'Node'?
+   65 |     node* newNodo = createNode(data);
+      |     ^~~~
+      |     Node
+list.c:65:21: error: initialization of 'int *' from incompatible pointer type 'Node *' [-Werror=incompatible-pointer-types]
+   65 |     node* newNodo = createNode(data);
+      |                     ^~~~~~~~~~
+list.c:67:20: error: assignment to 'Node *' from incompatible pointer type 'int *' [-Werror=incompatible-pointer-types]
+   67 |         list->head = newNodo;
+      |                    ^
+list.c:70:5: error: unknown type name 'node'; did you mean 'Node'?
+   70 |     node* anterior = list->head->next;
+      |     ^~~~
+      |     Node
+list.c:70:22: error: initialization of 'int *' from incompatible pointer type 'Node *' [-Werror=incompatible-pointer-types]
+   70 |     node* anterior = list->head->next;
+      |                      ^~~~
+list.c:71:13: error: request for member 'prev' in something not a structure or union
+   71 |     anterior->prev = newNodo;
+      |             ^~
+list.c:72:12: error: request for member 'next' in something not a structure or union
+   72 |     newNodo->next = anterior;
+      |            ^~
+list.c:73:22: error: assignment to 'Node *' from incompatible pointer type 'int *' [-Werror=incompatible-pointer-types]
+   73 |     list->head->next = newNodo;
+      |                      ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+438f0e5

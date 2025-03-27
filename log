@@ -57,3 +57,9 @@ Thu, Mar 27, 2025 10:28:06 AM:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 f62c9d5
+Thu, Mar 27, 2025 10:29:16 AM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|4
+total_score: 25/70
+cecbea7

@@ -115,3 +115,9 @@ list.c:73:22: error: assignment to 'Node *' from incompatible pointer type 'int 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 438f0e5
+Thu, Mar 27, 2025 10:44:29 AM: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  9|3
+total_score: 35/70
+3e03d2c

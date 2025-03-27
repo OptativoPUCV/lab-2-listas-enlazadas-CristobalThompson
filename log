@@ -2,3 +2,15 @@ Thu, Mar 27, 2025 10:02:11 AM:
  tests:  0|6
 total_score: 0/70
 25021aa
+Thu, Mar 27, 2025 10:07:59 AM: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'createList':
+list.c:32:38: error: 'Lista' undeclared (first use in this function); did you mean 'List'?
+   32 |     List* L = (List *) malloc(sizeof(Lista));
+      |                                      ^~~~~
+      |                                      List
+list.c:32:38: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0ac0efa

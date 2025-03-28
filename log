@@ -179,3 +179,9 @@ list.c:93:12: error: request for member 'prev' in something not a structure or u
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5c9d5cd
+Thu, Mar 27, 2025  9:40:04 PM: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  10|2
+total_score: 45/70
+809eb27

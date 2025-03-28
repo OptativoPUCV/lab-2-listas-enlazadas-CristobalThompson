@@ -117,6 +117,7 @@ void * popCurrent(List * list) {
         eliminado = list->head->data;
         Node* aux = list->current;
         list->head = aux->next;
+        list->head->prev = NULL;
         list->current = aux->next;
         free(aux);
         return eliminado;

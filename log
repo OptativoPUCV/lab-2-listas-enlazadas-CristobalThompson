@@ -256,3 +256,17 @@ Thu, Mar 27, 2025 10:38:20 PM:
  tests:  12|0
 total_score: 70/70
 5123afb
+Thu, Mar 27, 2025 11:03:51 PM: 
+ list.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function 'pushCurrent':
+list.c:83:55: error: 'return' with a value, in function returning void [-Werror=return-type]
+   83 |     if (list == NULL || list->current == NULL) return NULL;
+      |                                                       ^~~~
+list.c:82:6: note: declared here
+   82 | void pushCurrent(List * list, void * data) {
+      |      ^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+67d91e3

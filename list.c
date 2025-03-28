@@ -105,6 +105,14 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+    if (list->current->next == NULL){
+        void* eliminado = list->current->data;
+        list->tail = list->current->prev;
+        free(list->current);
+        list->current =
+        return eliminado;
+    }
+
     return NULL;
 }
 

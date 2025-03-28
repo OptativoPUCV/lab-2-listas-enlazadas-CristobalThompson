@@ -191,3 +191,17 @@ Thu, Mar 27, 2025  9:43:11 PM:
  tests:  11|1
 total_score: 55/70
 65e7fce
+Thu, Mar 27, 2025  9:57:28 PM: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:
+list.c: In function 'popCurrent':
+list.c:113:9: error: expected expression before 'return'
+  113 |         return eliminado;
+      |         ^~~~~~
+list.c:109:15: error: unused variable 'eliminado' [-Werror=unused-variable]
+  109 |         void* eliminado = list->current->data;
+      |               ^~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+18f817c

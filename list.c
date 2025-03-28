@@ -88,13 +88,6 @@ void pushCurrent(List * list, void * data) {
         list->tail = newNodo;
         return;
     }
-    if (list->current->prev == NULL){
-        Node* anterior = list->head;
-        anterior->prev = newNodo;
-        newNodo->next = anterior;
-        list->head = newNodo;
-        return;
-    }
     Node* pos = list->current->next;
     pos->prev = newNodo;
     newNodo->next = pos;

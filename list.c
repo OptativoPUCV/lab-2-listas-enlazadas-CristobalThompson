@@ -109,7 +109,7 @@ void * popCurrent(List * list) {
         void* eliminado = list->current->data;
         list->tail = list->current->prev;
         free(list->current);
-        list->current =
+        list->current = list->tail;
         return eliminado;
     }
 

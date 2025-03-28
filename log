@@ -205,3 +205,9 @@ list.c:109:15: error: unused variable 'eliminado' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 18f817c
+Thu, Mar 27, 2025  9:58:02 PM: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+9905c53

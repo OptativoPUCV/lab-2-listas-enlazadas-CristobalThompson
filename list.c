@@ -80,7 +80,7 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
-    if (list == NULL || list->current == NULL) return NULL;
+    if (list == NULL || list->current == NULL) exit(1);
     Node* newNodo = createNode(data);
     if (list->current->next == NULL){
         list->current->next = newNodo;
